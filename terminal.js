@@ -67,7 +67,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
 
       if (e.keyCode == 38 || e.keyCode == 40) {
         this.value = history_[histpos_] ? history_[histpos_] : histtemp_;
-        this.value = this.value; // Sets cursor to end of input.
+        this.value = this.value;
       }
     }
   }
