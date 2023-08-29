@@ -108,7 +108,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
           this.value = '';
           return;
         case 'help':
-          var result = "<h2>Help</h2><p><b>whoami</b>: display all my information.<br><b>education</b>: display all my information about my education.<br><b>interests</b>: display all my interests.<br><b>love</b>: are you curious about my love?<br><b>contact</b>: Say hi<br><b>blog</b>: Link of my blog<br><b>clear</b>: clear terminal<br><b>help</b>: display this menu.</p> <p> -- This website is forked from Ahmed Lekssays</p>";
+          var result = "<h2>Help</h2><p><b>whoami</b>: display all my information.<br><b>education</b>: display all my information about my education.<br><b>interests</b>: display all my interests.<br><b>love</b>: are you curious about my love?<br><b>contact</b>: Say hi<br><b>blog</b>: Link of my blog<br><b>clear</b>: clear terminal<br><b>help</b>: display this menu.</p> ";
           output(result);
           break;
         case 'education':
@@ -126,7 +126,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
           output(result);
           break;
         case 'contact':
-          var result = "<h3>Contact</h3><h4>Email: mohamed.enn2001@gmail.com<br>LinkedIn: Mohamed EN-NASSIBI<br>Portfolio: moenn1.github.io</h4>";
+          var result = "<h3>Contact</h3><h4>Email: mohamed.enn2001@gmail.com<br>LinkedIn: Mohamed EN-NASSIBI<br>Portfolio: moenn1.github.io</h4> <p> -- This website is forked from Ahmed Lekssays</p>";
           output(result);
           break;
         case 'whoami':
