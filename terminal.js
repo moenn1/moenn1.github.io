@@ -184,7 +184,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
   //
   return {
     init: function() {
-      output('<h1>Mohamed EN-NASSIBI</h1><h3>Software Engineer<br><p>Enter "help" for more information.</p><p> -- This website is forked from Ahmed Lekssays<3</p>');
+      output('<h1>Mohamed EN-NASSIBI</h1><h3>Software Engineer<br><p>Enter "help" for more information.</p><p> -- This website is forked from Ahmed Lekssays</p>');
     },
     output: output
   }
