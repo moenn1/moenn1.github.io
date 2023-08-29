@@ -108,7 +108,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
           this.value = '';
           return;
         case 'help':
-          var result = "<h2>Help</h2><p><b>whoami</b>: display all my information.<br><b>education</b>: display all my information about my education.<br><b>interests</b>: display all my interests.<br><b>love</b>: are you curious about my love?<br><b>contact</b>: Say hi<br><b>blog</b>: Link of my blog<br><b>clear</b>: clear terminal<br><b>help</b>: display this menu.</p>";
+          var result = "<h2>Help</h2><p><b>whoami</b>: display all my information.<br><b>education</b>: display all my information about my education.<br><b>interests</b>: display all my interests.<br><b>love</b>: are you curious about my love?<br><b>contact</b>: Say hi<br><b>blog</b>: Link of my blog<br><b>clear</b>: clear terminal<br><b>help</b>: display this menu.</p>  -- <p> -- This website is forked from Ahmed Lekssays</p>";
           output(result);
           break;
         case 'education':
@@ -184,7 +184,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
   //
   return {
     init: function() {
-      output('<h1>Mohamed EN-NASSIBI</h1><h3>Software Engineer<br><p>Enter "help" for more information.</p><p> -- This website is forked from Ahmed Lekssays</p>');
+      output('<h1>Mohamed EN-NASSIBI</h1><h3>Software Engineer<br><p>Enter "help" for more information.</p>');
     },
     output: output
   }
