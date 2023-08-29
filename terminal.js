@@ -130,7 +130,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
           output(result);
           break;
         case 'whoami':
-          var result = "<h1>Mohamed EN-NASSIBI</h1><p>4th-year software engineering student with a passion for computer science. Fluent in Dutch, Arabic, English, and French. Experienced freelancer in programming, web design, and copywriting. Eager to apply technical knowledge and problem-solving skills to real-world situations. Confident in delivering high-quality results and always looking for new challenges and opportunities to expand the skill set.</p>";
+          var result = "<h1>Mohamed EN-NASSIBI</h1><p>Software engineer with a passion for computer science. Fluent in Dutch, Arabic, English, and French. Experienced freelancer in programming, web design, and copywriting. Eager to apply technical knowledge and problem-solving skills to real-world situations. Confident in delivering high-quality results and always looking for new challenges and opportunities to expand the skill set.</p>";
           output(result);
           break;
         case 'love':
