@@ -126,7 +126,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
           output(result);
           break;
         case 'contact':
-          var result = "<h3>Contact</h3><h4>Email: mohamed.enn2001@gmail.com<br>LinkedIn: Mohamed EN-NASSIBI<br>Portfolio: moenn1.github.io</h4> <p> -- This website is forked from Ahmed Lekssays</p>";
+          var result = "<h3>Contact</h3><h4>Email: mohamed.enn2001@gmail.com<br>LinkedIn: Mohamed EN-NASSIBI<br>Portfolio: moenn1.github.io</h4> ";
           output(result);
           break;
         case 'whoami':
