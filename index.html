@@ -1,21 +1,81 @@
-
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <title>Mohamed EN-NASSIBI</title>
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata"
-          rel="stylesheet" type="text/css" />
-    <link href="terminal.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mohamed EN-NASSIBI — software engineer working on backend systems, CI infrastructure, developer tooling, and observability.">
+    <meta name="theme-color" content="#08111f">
+    <title>Mohamed EN-NASSIBI · Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="terminal.css">
   </head>
   <body>
-    <div id="container">
-      <output></output>
-      <div id="input-line" class="input-line">
-        <div class="prompt"></div><div><input class="cmdline" autofocus /></div>
-      </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <main class="shell">
+      <nav class="topbar" aria-label="Main navigation">
+        <a class="brand" href="#top" aria-label="Home"><span class="prompt">~/</span> moenn1</a>
+        <div class="nav-links">
+          <a href="#work">work</a><a href="#projects">projects</a><a href="#skills">skills</a><a href="#contact">contact</a>
+        </div>
+      </nav>
+
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="prompt">$</span> whoami</p>
+          <h1>Mohamed<br><span>EN-NASSIBI</span></h1>
+          <p class="lead">Software engineer building dependable backend systems, CI infrastructure, and developer tools that make complex work easier to ship.</p>
+          <div class="hero-actions"><a class="button primary" href="#contact">Let’s connect <span>↗</span></a><a class="button secondary" href="#projects">See what I build</a></div>
+          <div class="status"><i></i> Junior Member of Technical Staff · Oracle GraalVM team · Casablanca</div>
+        </div>
+        <aside class="terminal-card" aria-label="Terminal introduction">
+          <div class="terminal-top"><span></span><span></span><span></span><b>profile.sh</b></div>
+          <pre><code><em>const</em> engineer = {
+  focus: [
+    <strong>"distributed systems"</strong>,
+    <strong>"CI &amp; automation"</strong>,
+    <strong>"developer experience"</strong>
+  ],
+  tools: [<strong>"Java"</strong>, <strong>"Kubernetes"</strong>, <strong>"Redis"</strong>],
+  languages: [<strong>"en"</strong>, <strong>"fr"</strong>, <strong>"ar"</strong>, <strong>"nl"</strong>]
+};</code></pre>
+        </aside>
+      </section>
+
+      <section class="section intro-grid">
+        <div><p class="eyebrow"><span class="prompt">01</span> / about</p><h2>Turning infrastructure problems into clear systems.</h2></div>
+        <p>I work across application code and the platforms that run it: queues, databases, CI workers, APIs, dashboards, and release automation. I enjoy the parts where correctness, performance, and a good developer experience have to coexist.</p>
+      </section>
+
+      <section class="section" id="work">
+        <div class="section-heading"><div><p class="eyebrow"><span class="prompt">02</span> / experience</p><h2>Where I’ve been building.</h2></div><span class="mono muted">2023 → now</span></div>
+        <div class="timeline">
+          <article class="timeline-item"><div class="timeline-date">JUL 2024 — NOW</div><div><h3>Junior Member of Technical Staff <span>@ Oracle</span></h3><p class="muted">GraalVM team · Casablanca</p><p>Designing a Java/Micronaut platform for macOS CI infrastructure: centralized orchestration, per-host agents, VM lifecycle management, monitoring, and capacity-aware scheduling.</p><ul><li>Built Redis-backed queueing and scheduling with concurrency control, routing, and automated cleanup.</li><li>Led workflow automation and a CI results dashboard using Java, React/Preact, and REST APIs.</li><li>Deploy and operate services with Docker, Kubernetes on OKE, and OCI.</li><li>Develop internal automation CLI integrations for Jira, Bitbucket, GitLab, and GitHub.</li></ul></div></article>
+          <article class="timeline-item"><div class="timeline-date">JAN — JUL 2024</div><div><h3>Research Assistant <span>@ Oracle</span></h3><p class="muted">GraalVM team · Casablanca</p><p>Built a queueing service for macOS VM workloads from the ground up, handling VM state, concurrency, Redis, and GitLab integration. Automated release and backport workflows with Python and Bash.</p></div></article>
+          <article class="timeline-item"><div class="timeline-date">JUL — SEP 2023</div><div><h3>Research Assistant <span>@ Oracle</span></h3><p class="muted">GraalVM team · Casablanca</p><p>Created a test visualization and code coverage dashboard with Micronaut and React, plus Python data synchronization and reporting tools.</p></div></article>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading"><div><p class="eyebrow"><span class="prompt">03</span> / selected systems</p><h2>Things I like to make.</h2></div></div>
+        <div class="project-grid">
+          <article class="project-card"><span class="card-number">01</span><h3>CI infrastructure platform</h3><p>Central orchestration plus host agents for provisioning, cloning, monitoring, and retiring macOS CI VMs at scale.</p><div class="tags"><span>Java</span><span>Micronaut</span><span>Redis</span><span>GitLab</span></div></article>
+          <article class="project-card"><span class="card-number">02</span><h3>Developer workflow automation</h3><p>Internal CLI and web workflows that connect source control, issue tracking, release processes, and human review.</p><div class="tags"><span>Java</span><span>REST</span><span>Jira</span><span>GitHub</span></div></article>
+          <article class="project-card"><span class="card-number">03</span><h3>Risk engine learning project</h3><p>A .NET learning application exploring portfolio positions, risk metrics, SQLite/EF Core repositories, authentication, and a message-broker-ready architecture.</p><div class="tags"><span>C#</span><span>.NET</span><span>EF Core</span><span>SQL</span></div></article>
+          <article class="project-card"><span class="card-number">04</span><h3>CI observability dashboard</h3><p>Readable test results, trends, and visualizations that turn build data into feedback engineers can act on.</p><div class="tags"><span>React</span><span>Preact</span><span>Python</span><span>Data</span></div></article>
+        </div>
+      </section>
+
+      <section class="section skills-section" id="skills">
+        <div><p class="eyebrow"><span class="prompt">04</span> / toolkit</p><h2>The tools behind the work.</h2></div>
+        <div class="skill-groups"><div><h3>Languages</h3><p>Java · Python · TypeScript · JavaScript · Bash · SQL · C# · C/C++</p></div><div><h3>Backend &amp; data</h3><p>Micronaut · Spring · Helidon · REST · microservices · Redis · Oracle Database · MongoDB · Cassandra</p></div><div><h3>Platform</h3><p>Docker · Kubernetes · OKE · OCI · GitHub Actions · GitLab CI/CD · GraalVM Native Image · macOS/Linux automation</p></div><div><h3>Collaboration</h3><p>Git · Jira · Confluence · Bitbucket · GitLab · GitHub · internal automation CLIs</p></div></div>
+      </section>
+
+      <section class="section education-row"><div><p class="eyebrow"><span class="prompt">05</span> / education</p><h2>Foundations matter.</h2></div><div><h3>Engineer’s degree · Software Engineering</h3><p>Ecole Nationale des Sciences Appliquées Al Hoceima · 2024</p><p class="muted">Java SE 8 certified · Fluent in Arabic, English, French, and Dutch.</p></div></section>
+
+      <section class="contact" id="contact"><p class="eyebrow"><span class="prompt">06</span> / contact</p><h2>Have a hard systems problem?</h2><p>I’m always happy to talk about backend engineering, developer infrastructure, or thoughtful ways to make a system more reliable.</p><a class="button primary" href="mailto:mohamed.enn2001@gmail.com">mohamed.enn2001@gmail.com <span>↗</span></a></section>
+      <footer><span>© 2026 Mohamed EN-NASSIBI</span><span class="mono">built with curiosity &amp; plain HTML</span></footer>
+    </main>
     <script src="terminal.js"></script>
   </body>
 </html>
