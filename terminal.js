@@ -47,7 +47,8 @@ var Terminal = Terminal || function (cmdLineSelector, outputSelector) {
       skills: '<h2>Skills</h2><p><b>Languages:</b> Java, Python, TypeScript, JavaScript, Bash, SQL, C#, C/C++<br><b>Backend:</b> Micronaut, Spring, Helidon, REST APIs, microservices<br><b>Platform:</b> Docker, Kubernetes, OKE, OCI, GitHub Actions, GitLab CI/CD, GraalVM Native Image<br><b>Data:</b> Redis, Oracle Database, MongoDB, Cassandra</p>',
       languages: '<h2>Languages</h2><p>Arabic · fluent<br>English · professional<br>French · fluent<br>Dutch · native</p>',
       interests: '<h2>Interests</h2><p>Distributed systems, developer experience, performance, automation, observability, and learning how complex systems work.</p>',
-      contact: '<h2>Contact</h2><p>Email: <a href="mailto:mohamed.enn2001@gmail.com">mohamed.enn2001@gmail.com</a><br>Website: moenn1.github.io</p>'
+      contact: '<h2>Contact</h2><p>Email: <a href="mailto:mohamed.enn2001@gmail.com">mohamed.enn2001@gmail.com</a><br>Website: moenn1.github.io</p>',
+      oumaima: '<p>my lovely wife ❤️</p>'
     };
     output.insertAdjacentHTML('beforeend', '<p>' + (responses[command] || escapeHtml(command) + ': command not found — type help') + '</p>');
   }
